@@ -31,6 +31,7 @@ def create_superuser(self,email,name,password):
     return user
 
 
+
 class UserProfile(AbstractBaseUser,PermissionsMixin):
     """Database model for users in the system"""
     email = models.EmailField(max_length=255,unique=True)
